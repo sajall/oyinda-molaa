@@ -5,6 +5,7 @@
 body {
   background-color: #171717;
   font-family: sans-serif;
+  padding: 0;
 }
 /* nav-bar */
 #nav-bar {
@@ -353,4 +354,142 @@ footer {
   align-items: center;
   justify-content: center ;
 
+}
+
+/* small */
+@media only screen and (max-width: 600px) {
+  #nav-items{
+    display: none;
+  }
+  #mid-div {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    height: fit-content;
+    /* margin: auto; */
+    margin-top: 100px;
+    background-color: red;
+    position: relative;
+    left: 25px;
+    /* right: 0; */
+    /* position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto; */
+  }
+  #image img {
+    width: 300px;
+    border-radius: 50%;
+    border: 20px solid #181818;
+    position: relative;
+    top: 100px;
+  }
+  #about {
+    width: 100%;
+    margin: auto;
+    background-color: red;
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #circles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    /* background-color: red; */
+    /* margin-top: 30px; */
+    padding: 50px;
+    /* margin: auto; */
+  }
+  .circle-parent {
+    /* background-color: blue; */
+    width: 200px;
+    height: 300px;
+    /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+  }
+  .circle-parent span {
+    font-weight: bold;
+  }
+  .circle {
+    width: 60px;
+    height: 60px;
+    background-color: #212121;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .green {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #27ae60;
+  }
+  #what {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  #cards {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px; ;
+    /* margin-top: 80px; */
+    width: 60%;
+    padding: 70px;
+    margin: auto;
+  }
+  #percent {
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #212121;
+    color: white;
+  }
+  .percentage {
+    width: 100px;
+    height: 100px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    /* color: #27ae60;      */
+  }
+  .touch {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+  }
 }
