@@ -153,8 +153,8 @@ body {
   margin: auto;
 }
 .card {
-  width: 180px;
-  height: 130px;
+  width: 200px;
+  height:170px;
   color: white;
   font-size: 25px;
   display: flex;
@@ -164,6 +164,7 @@ body {
   justify-content: center;
   /* align-items: center; */
   background-color: #212121;
+  box-sizing: border-box;
   transition: 0.3s;
 }
 .card:hover {
@@ -211,8 +212,78 @@ body {
   color: #4f4f4f;
 }
 
+#projects{
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+.project{
+  width: 400px;
+  height:300px;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.project button{
+  width: 110px;
+    height: 35px;
+    background-color:#27ae60 ;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 0.3s linear 0s;
+
+}
+.project button a{
+  text-decoration: none;
+  color: white;
+}
+.project button:hover {
+ background-color: #171717;
+
+}
+.project img {
+  width: 330px;
+  height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* get in touch */
-#touch {
+.touch {
   color: white;
   font-weight: bold;
   font-size: 40px;
