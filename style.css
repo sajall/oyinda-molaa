@@ -347,6 +347,12 @@ footer {
 
 /* small Screen------------------------------------- */
 @media screen and (max-width: 600px) {
+  html, body{
+    overflow-x: hidden;
+  }
+  body{
+    position: relative;
+  }
   #nav-items{
     display: none;
   }
