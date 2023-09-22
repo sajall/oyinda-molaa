@@ -7,6 +7,7 @@ body {
   font-family: sans-serif;
   padding: 0;
 }
+
 /* nav-bar */
 #nav-bar {
   display: flex;
@@ -30,15 +31,11 @@ body {
   height: 400px;
   margin: auto;
   margin-top: 100px;
-  /* position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto; */
+ 
 }
 #text-parent {
   padding: 100px;
+
 }
 #text {
   color: hsl(0, 0%, 100%);
@@ -78,9 +75,9 @@ body {
 
 /* About wali div */
 #about {
-  width: 50%;
+  width: 60%;
   margin: auto;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   text-align: center;
   color: white;
   display: flex;
@@ -94,16 +91,12 @@ body {
   justify-content: space-between;
   gap: 20px;
   width: 70%;
-  /* background-color: red; */
-  /* margin-top: 30px; */
   padding: 50px;
   margin: auto;
 }
 .circle-parent {
-  /* background-color: blue; */
   width: 200px;
   height: 200px;
-  /* padding: 30px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,16 +138,16 @@ body {
 /* --------------------------------------------------------------- */
 /* cards */
 #cards {
-  /* background-color: red; */
+
   display: flex;
-  justify-content: space-around;
-  /* margin-top: 80px; */
-  width: 60%;
+  justify-content: space-between;
+ 
+  width: 65%;
   padding: 70px;
   margin: auto;
 }
 .card {
-  width: 200px;
+  width: 280px;
   height:170px;
   color: white;
   font-size: 25px;
@@ -163,7 +156,6 @@ body {
   gap: 20px;
   padding: 20px;
   justify-content: center;
-  /* align-items: center; */
   background-color: #212121;
   box-sizing: border-box;
   transition: 0.3s;
@@ -177,7 +169,7 @@ body {
 /* ---------------------------------------- */
 /* my skills */
 #skills {
-  width: 60%;
+  width: 69%;
   margin: auto;
   margin-top: 50px;
   display: flex;
@@ -204,7 +196,6 @@ body {
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  /* color: #27ae60;      */
 }
 .percentage p {
   color: #27ae60;
@@ -295,44 +286,45 @@ body {
 }
 /* form ------------ */
 #form {
-  width: 80%;
-  height: 600px;
+
+  width: 60%;
+  height: 700px;
   margin: auto;
+  /* background-color: red; */
+
 
 }
 #inside-form{
   height: 600px;
+
 }
 #inside-form input {
   width: 400px;
   height: 25px;
   background-color: transparent;
   border-bottom: 1px solid white;
-  border: 0px 0px 5px 0px white;
   text-indent: 10px;
   margin-top: 80px;
-  margin-left: 90px;
-  border-top: 2px solid transparent;
-  border-left: 1px solid transparent;
+  border-top:  transparent;
+  border-left:  transparent;
   border-right: transparent;
   color: white;
 }
 
 #inside-form input:focus {
   background-color: transparent;
-  border-bottom: 1px solid white;
+
   text-indent: 10px;
-  border-top: transparent;
+  border-top:    transparent;
   border-left: transparent;
   border-right: transparent;
-  border: none;
 }
+
 textarea {
-  width: 83%;
+  width: 806px;
   margin-top: 50px;
-  margin-left: 90px;
   background-color: transparent;
-  text-indent: px;
+  text-indent: 10px;
   color: white;
 }
 #inside-form button {
@@ -341,10 +333,7 @@ textarea {
   height: 40px;
   border: none;
   position: relative;
-  left: 465px;
   top: 25px;
-
-  /* margin: auto; */
 }
 footer {
   height: 100px;
@@ -356,8 +345,8 @@ footer {
 
 }
 
-/* small */
-@media only screen and (max-width: 600px) {
+/* small Screen------------------------------------- */
+@media screen and (max-width: 600px) {
   #nav-items{
     display: none;
   }
@@ -368,30 +357,29 @@ footer {
     justify-content: space-between;
     width: fit-content;
     height: fit-content;
-    /* margin: auto; */
-    margin-top: 100px;
-    background-color: red;
     position: relative;
-    left: 25px;
-    /* right: 0; */
-    /* position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; */
+ 
+  }
+  #text-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height:300px;
+    padding: 0px !important;
+  
+  }
+  #text {
+    color: hsl(0, 0%, 100%);
   }
   #image img {
     width: 300px;
-    border-radius: 50%;
-    border: 20px solid #181818;
     position: relative;
-    top: 100px;
+    top: 10px;
   }
   #about {
-    width: 100%;
+    width: 380px;
     margin: auto;
-    background-color: red;
     margin-top: 100px;
     text-align: center;
     color: white;
@@ -400,96 +388,108 @@ footer {
     gap: 30px;
   }
   #circles {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
-    /* background-color: red; */
-    /* margin-top: 30px; */
-    padding: 50px;
-    /* margin: auto; */
   }
   .circle-parent {
-    /* background-color: blue; */
-    width: 200px;
-    height: 300px;
-    /* padding: 30px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-    font-size: 14px;
-    color: white;
-  }
-  .circle-parent span {
-    font-weight: bold;
+    width: 300px;
+    height: 200px;
   }
   .circle {
-    width: 60px;
-    height: 60px;
-    background-color: #212121;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100px;
+    height: 100px;
   }
   .green {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #27ae60;
+    width: 20px;
+    height: 20px;
+  }
+  #cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+    align-items: center;
+    gap: 30px; ;
+  }
+  .card {
+    width: 330px;
+    height:200px;
+ 
+  }
+  #skills span {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  #percent {
+    width: 330px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; 
+  }
+  .percentage {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .touch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   #what {
     color: white;
     font-weight: bold;
     font-size: 40px;
     width: 80%;
-    margin: auto;
     text-align: center;
   }
-  #cards {
-    /* background-color: red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 30px; ;
-    /* margin-top: 80px; */
-    width: 60%;
-    padding: 70px;
-    margin: auto;
-  }
-  #percent {
-    width: 500px;
-    height: fit-content;
+  #projects{
+
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #212121;
-    color: white;
-  }
-  .percentage {
-    width: 100px;
-    height: 100px;
-    /* background-color: red; */
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+    gap: 20px;
     justify-content: center;
-    /* color: #27ae60;      */
+    box-sizing: border-box;
+  
   }
-  .touch {
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    padding: 100px;
+  .project{
+    width: 330px;
+    height:300px;
+ 
+  }
+  .project img {
+    width: 300px;
+    height: 180px;
+  }
+  #form{
+    width:320px;
+    height: 700px;
+ 
+    
+  }
+
+  footer {
+    width: 380px;
+
+  
+  }
+  #inside-form input {
+    width: 300px;
+    height: 25px;
+ 
+  }
+  #inside-form{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ 
+  }
+  textarea {
+    width: 300PX;
+ 
   }
 }
